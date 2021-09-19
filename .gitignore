@@ -1,0 +1,6 @@
+# Ignore the powerpoint slides directory
+Slides/
+
+*.pptx
+*.docx
+*.graffle
