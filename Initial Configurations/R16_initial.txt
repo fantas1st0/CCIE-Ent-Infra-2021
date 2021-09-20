@@ -8,10 +8,10 @@ interface Loopback0
  ip address 16.16.16.16 255.255.255.255
 !
 interface Gi0/0
- ip addess 10.10.16.16 255.255.255.0
+ ip address 10.10.16.16 255.255.255.0
  no shutdown
 interface Gi0/1
- ip address 10.11.16.11 255.255.255.0
+ ip address 10.11.16.16 255.255.255.0
  no shutdown
 interface Gi0/2
  ip address 10.15.16.16 255.255.255.0
