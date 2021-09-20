@@ -1,0 +1,17 @@
+hostname SW6
+!
+line console 0
+ logging sync
+ exec-timeout 45 0
+!
+interface Loopback0
+ ip address 106.106.106.106 255.255.255.255
+!
+interface Gi0/0
+ no shutdown
+interface Gi0/1
+ no shutdown
+interface Gi0/2
+ no shutdown
+interface Gi0/3
+ no shutdown
