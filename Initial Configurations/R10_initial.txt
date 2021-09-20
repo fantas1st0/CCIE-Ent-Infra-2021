@@ -1,0 +1,17 @@
+hostname R10
+!
+line console 0
+ logging sync
+ exec-timeout 45 0
+!
+interface Loopback0
+ ip address 10.10.10.10 255.255.255.255
+!
+interface Gi0/0
+ no shutdown
+interface Gi0/1
+ ip address 10.9.10.10 255.255.255.0
+ no shutdown
+interface Gi0/2
+ ip address 10.10.16.10 255.255.255.0
+ no shutdown

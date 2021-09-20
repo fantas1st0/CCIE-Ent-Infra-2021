@@ -1,0 +1,18 @@
+hostname R8
+!
+line console 0
+ logging sync
+ exec-timeout 45 0
+!
+interface Loopback0
+ ip address 8.8.8.8 255.255.255.255
+!
+interface Gi0/0
+ ip address 10.6.8.8 255.255.255.0
+ no shutdown
+interface Gi0/1
+ ip address 10.7.8.8 255.255.255.0
+ no shutdown
+interface Gi0/2
+ ip address 10.8.9.8 255.255.255.0
+ no shutdown
