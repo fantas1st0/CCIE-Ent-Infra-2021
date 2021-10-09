@@ -1,0 +1,24 @@
+SW3
+conf t
+int ra gi0/0 - 1 
+ channel-group 1 mode active
+int po1 
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+exit
+
+SW4 
+conf t
+int ra gi0/0 - 1 
+ channel-group 1 mode passive
+int po1 
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+exit
+lacp system-priority 1
+
+SW2
+conf t
+vlan 4,44,52,63
+exit
+
