@@ -1,0 +1,14 @@
+interface Loopback0
+ ip address 17.17.17.17 255.255.255.255
+!
+interface Gi0/3
+ ip address 10.14.17.17 255.255.255.0
+ no shutdown
+!
+interface Gi0/1
+ ip address 10.15.17.17 255.255.255.0
+ no shutdown
+!
+interface Gi0/2
+ ip address 10.16.17.17 255.255.255.0
+ no shutdown

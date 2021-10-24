@@ -1,0 +1,10 @@
+interface Loopback0
+ ip address 12.12.12.12 255.255.255.255
+!
+interface Gi0/0
+ ip address 10.0.20.12 255.255.255.0
+ no shutdown
+interface Gi0/0.12
+ enc dot1q 12
+ ip address 10.0.12.12 255.255.255.0
+ no shutdown
